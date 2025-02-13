@@ -9,47 +9,48 @@
 </head>
 <body>
     <header>
-        <h1 class="glow">Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="neon-text">Contact Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="contact-info">
+    <section id="contact">
+        <div class="container">
             <h2 class="section-title">Get in Touch</h2>
-            <p>If you’d like to collaborate or just say hello, feel free to reach out!</p>
-            <div class="contact-details">
+            <p class="section-description">Feel free to reach out to me for any collaboration or project discussion.</p>
+
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="neon-button">Send Message</button>
+            </form>
+
+            <div class="contact-info">
                 <p>Email: <a href="mailto:gaanavreddy7@gmail.com">gaanavreddy7@gmail.com</a></p>
-                <p>Phone: <a href="tel:+919739314959">+91 97393 14959</a></p>
+                <p>Phone: +91 97393 14959</p>
                 <p>LinkedIn: <a href="https://linkedin.com/in/gaanav-reddy-9901a824a" target="_blank">linkedin.com/in/gaanav-reddy-9901a824a</a></p>
             </div>
-        </section>
-
-        <section class="contact-form-section">
-            <h2 class="section-title">Send a Message</h2>
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
+        <p class="footer-text">&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

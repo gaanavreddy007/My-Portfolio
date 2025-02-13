@@ -9,85 +9,52 @@
 </head>
 <body>
     <header>
-        <h1 class="glow">My Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="neon-text">My Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="projects">
-            <h2 class="section-title">Highlighted Projects</h2>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Featured Projects</h2>
 
             <div class="project-card">
-                <h3>Smart Watch for Elderly</h3>
-                <p>A wearable heart rate monitoring system using **Arduino Nano** and sensors for real-time health tracking.</p>
-                <ul>
-                    <li>Developed with **C++ and Arduino**</li>
-                    <li>Data visualization using **Python & Matplotlib**</li>
-                    <li>Bluetooth connectivity for **mobile alerts**</li>
-                </ul>
+                <div class="project-content">
+                    <h3>Smart Watch for Elderly</h3>
+                    <p>Designed an energy-efficient heart rate monitoring system using Arduino Nano.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
 
             <div class="project-card">
-                <h3>Government Asset Management App</h3>
-                <p>A **web application** to manage and track government assets efficiently with user and admin roles.</p>
-                <ul>
-                    <li>Built with **HTML, CSS, JavaScript, and MySQL**</li>
-                    <li>Secure authentication using **JWT**</li>
-                    <li>Role-based access control for **admins & users**</li>
-                </ul>
+                <div class="project-content">
+                    <h3>Government Asset Management App</h3>
+                    <p>Built a web app for efficient government asset tracking with user and admin roles.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
 
             <div class="project-card">
-                <h3>Smart Car using RFID Sensor</h3>
-                <p>An **RFID-based vehicle security system** that allows contactless unlocking and ignition control.</p>
-                <ul>
-                    <li>Utilized **Arduino and RFID modules**</li>
-                    <li>Implemented **C++ and embedded programming**</li>
-                    <li>Enhanced security with **two-factor authentication**</li>
-                </ul>
+                <div class="project-content">
+                    <h3>Smart Car using RFID Sensor</h3>
+                    <p>Engineered an RFID-based locking system for vehicle security and automation.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h3>AI-Powered Resume Analyzer</h3>
-                <p>A **machine learning-based** tool that analyzes resumes and suggests improvements for better job opportunities.</p>
-                <ul>
-                    <li>Developed using **Python, Pandas, and NLP**</li>
-                    <li>Real-time **text analysis** for resume optimization</li>
-                    <li>**Automated scoring system** for skill gaps</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <h3>Personal Finance Tracker</h3>
-                <p>An interactive **web application** for tracking expenses, income, and savings goals.</p>
-                <ul>
-                    <li>Built using **React.js, Node.js, and MongoDB**</li>
-                    <li>Integrated **chart visualization** for spending patterns</li>
-                    <li>Secure authentication with **OAuth 2.0**</li>
-                </ul>
-            </div>
-
-            <div class="project-card">
-                <h3>AR/VR Event Organizer</h3>
-                <p>A platform for managing AR/VR events and collaborations in the tech industry.</p>
-                <ul>
-                    <li>Developed using **Three.js and WebGL**</li>
-                    <li>Hosted **live interactive 3D experiences**</li>
-                    <li>Integrated **blockchain-based ticketing system**</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
+        <p class="footer-text">&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
