@@ -1,48 +1,66 @@
-/* Neon Text Glow */
-@keyframes neonGlow {
-    0% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
-    50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
-    100% { text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff; }
+
+@keyframes neon-glow {
+    0% { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+    50% { text-shadow: 0 0 20px #ff0, 0 0 40px #ff0; }
+    100% { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
 }
 
-.glowing-text {
-    animation: neonGlow 1.5s infinite alternate;
+.neon-text {
+    animation: neon-glow 1.5s infinite alternate;
 }
 
-/* Button Hover Glow */
-@keyframes buttonGlow {
-    0% { box-shadow: 0 0 5px #00ff00; }
-    100% { box-shadow: 0 0 20px #00eaff; }
+
+@keyframes button-glow {
+    0% { box-shadow: 0 0 5px #0ff; }
+    100% { box-shadow: 0 0 20px #ff0; }
 }
 
 .btn:hover {
-    animation: buttonGlow 0.5s alternate infinite;
+    animation: button-glow 0.5s alternate infinite;
 }
 
-/* Scroll Reveal Effect */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+.nav-link {
+    position: relative;
+    transition: 0.3s;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Cursor Effect */
-.cursor {
-    width: 10px;
-    height: 10px;
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
     background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.floating {
+    animation: floating 3s infinite ease-in-out;
+}
+
+
+.cursor {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
     position: absolute;
     border-radius: 50%;
+    box-shadow: var(--neon-glow);
+    transform: translate(-50%, -50%);
     pointer-events: none;
-    box-shadow: 0 0 10px var(--primary-color);
-    transition: transform 0.1s linear;
-}
-
-.cursor.expand {
-    transform: scale(2);
+    transition: transform 0.1s ease;
 }

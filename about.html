@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Gaanav Reddy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>About - Gaanav Reddy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
 </head>
 <body>
+
     <header>
         <div class="container">
             <h1 class="neon-text">About Me</h1>
             <nav>
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link active">About</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -24,20 +26,26 @@
     </header>
 
     <section id="about">
-        <div class="container about-content">
-            <img src="assets/profile.png" alt="Gaanav Reddy" class="profile-img">
-            <div class="about-text">
-                <h2 class="section-title">Who Am I?</h2>
-                <p>I'm a 3rd-year Computer Science student at Presidency University with a deep passion for software development, IoT, and web technologies. I specialize in building innovative projects that integrate modern technologies.</p>
-                <h3>What Drives Me?</h3>
-                <p>I'm driven by the power of technology to transform ideas into real-world solutions. My expertise spans multiple domains, including programming, embedded systems, and full-stack development.</p>
-                <a href="projects.html" class="btn">Explore My Projects</a>
-            </div>
+        <div class="container">
+            <h2 class="section-title fade-in">Who Am I?</h2>
+            <p class="section-content slide-up">I am a 3rd-year Computer Science student at Presidency University, passionate about software development, IoT, and web technologies.</p>
+            
+            <h2 class="section-title fade-in">My Journey</h2>
+            <p class="section-content slide-up">From building an "RFID-based Smart Car" to developing an "Asset Management System", I have always been drawn to solving real-world problems with technology.</p>
+
+            <h2 class="section-title fade-in">Achievements</h2>
+            <ul class="achievements-list glow-effect">
+                <li>Developed a "Smartwatch for Elderly Persons" using Arduino.</li>
+                <li>Certified in "Programming Using JAVA" (Infosys Springboard).</li>
+                <li>Volunteer at "Startup Launchpad" and Organizer for "AR/VR Events".</li>
+                <li>Leader of "Presidency University Football Team".</li>
+            </ul>
         </div>
     </section>
 
     <footer>
         <p class="footer-text">&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>

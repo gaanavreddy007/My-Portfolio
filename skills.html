@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Gaanav Reddy</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/animations.js" defer></script>
 </head>
 <body>
+
     <header>
         <div class="container">
             <h1 class="neon-text">My Skills</h1>
@@ -16,7 +19,6 @@
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -25,23 +27,48 @@
 
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
+            <h2 class="section-title fade-in">Technical Skills</h2>
 
-            <div class="skills-grid">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">C++</div>
-                <div class="skill-item">Java</div>
-                <div class="skill-item">HTML, CSS, JavaScript</div>
-                <div class="skill-item">React.js</div>
-                <div class="skill-item">MySQL</div>
-                <div class="skill-item">Pandas, NumPy, Seaborn</div>
-                <div class="skill-item">Arduino, Raspberry Pi</div>
+            <div class="skill-card slide-left">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                </ul>
             </div>
+
+            <div class="skill-card slide-right">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js, Tailwind CSS</li>
+                    <li>MySQL, Firebase</li>
+                </ul>
+            </div>
+
+            <div class="skill-card slide-left">
+                <h3>Data Science & AI</h3>
+                <ul>
+                    <li>Pandas, NumPy, Seaborn</li>
+                    <li>Machine Learning Basics</li>
+                </ul>
+            </div>
+
+            <div class="skill-card slide-right">
+                <h3>IoT & Embedded Systems</h3>
+                <ul>
+                    <li>Arduino, Raspberry Pi</li>
+                    <li>RFID, Sensors</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
     <footer>
         <p class="footer-text">&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
