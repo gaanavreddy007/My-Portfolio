@@ -5,32 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills - Gaanav Reddy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
     <header>
+        <h1 class="glow">My Skills</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>MySQL</li>
-            <li>Pandas, NumPy, Seaborn</li>
-            <li>Arduino, Raspberry Pi</li>
-        </ul>
-    </section>
+    <main>
+        <section class="skills">
+            <h2 class="section-title">Technical Expertise</h2>
 
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML5, CSS3</li>
+                        <li>React.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Backend</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Science & IoT</h3>
+                    <ul>
+                        <li>Pandas, NumPy, Seaborn</li>
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-skills">
+            <h2 class="section-title">Skill Proficiency</h2>
+            <div class="progress-container">
+                <div class="skill-bar">
+                    <span>Python</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span>C++</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span>React.js</span>
+                    <div class="progress">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

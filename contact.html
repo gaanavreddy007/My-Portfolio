@@ -5,29 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Gaanav Reddy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
     <header>
+        <h1 class="glow">Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <main>
+        <section class="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>If you’d like to collaborate or just say hello, feel free to reach out!</p>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:gaanavreddy7@gmail.com">gaanavreddy7@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919739314959">+91 97393 14959</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/gaanav-reddy-9901a824a" target="_blank">linkedin.com/in/gaanav-reddy-9901a824a</a></p>
+            </div>
+        </section>
 
+        <section class="contact-form-section">
+            <h2 class="section-title">Send a Message</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gaanav Reddy. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
